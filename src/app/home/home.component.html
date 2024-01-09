@@ -1,0 +1,24 @@
+<p>home works!</p>
+<p>Practicing Event Emitter here</p>
+<app-filter></app-filter>
+<div>
+    <div class="user-container">
+        <div class="user-container-inner" *ngFor="let item of users">
+            <div>
+            <img [src]="item.image" alt="">
+            <h3>{{item.name}}</h3>
+            <p>{{item.gender}}</p>
+        </div>
+        </div>
+    </div>
+</div>
+<app-grandparent></app-grandparent>
+
+<div class="container-demo">
+    <input type="text" #inputEl>
+    <button (click)="onBtnClick(inputEl)">Submit</button>
+
+    <app-demo [message]="inputVal">
+    <p #para>User has entered the following text: {{inputVal}}</p>
+    </app-demo>
+</div>

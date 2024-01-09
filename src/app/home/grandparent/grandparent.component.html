@@ -1,0 +1,5 @@
+<p>grandparent works!</p>
+<app-parent-btn (parentBtn)="grandparentClick()"></app-parent-btn>
+<div *ngIf="toggle">
+<app-parent-data [detailsFromParent]="users" ></app-parent-data>
+</div>
